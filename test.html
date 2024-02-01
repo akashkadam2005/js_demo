@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+        function student()
+        {
+        var name=document.getElementById("name").value
+        var dob=document.getElementById("dob").value
+        var Mobile=document.getElementById("Mobile").value
+        var email=document.getElementById("email").value
+        var addr=document.getElementById("addr").value
+        var course=document.getElementById("course").value
+        var year=document.getElementById("year").value
+        var marks=document.getElementById("marks").value
+        var pass=document.getElementById("pass").value
+        var confirm=document.getElementById("confirm").value
+
+            if(name=="")
+            {
+                alert("plz enter the name")
+                document.getElementById("name").focus()
+                document.getElementById("name").style.borderColor="red"
+            }
+            if(dob=="")
+            {
+                alert("plz enter the Date of Birth")
+                document.getElementById("name").style.borderColor="red"
+                document.getElementById("name").focus()
+
+            }
+            if(Mobile=="")
+            {
+                alert("plz enter the Mobile Number")
+                document.getElementById("name").style.borderColor="red"
+                document.getElementById("name").focus()
+
+            }
+            if(email=="")
+            {
+                alert("plz enter the Email")
+                document.getElementById("name").style.borderColor="red"
+                document.getElementById("name").focus()
+
+            }
+            if(addr=="")
+            {
+                alert("plz enter the Address")
+                document.getElementById("name").style.borderColor="red"
+                document.getElementById("name").focus()
+
+            }
+            if(course=="")
+            {
+                alert("plz enter the course")
+            }
+            if(year=="")
+            {
+                alert("plz enter the Appear Year")
+                document.getElementById("name").style.borderColor="red"
+                document.getElementById("name").focus()
+
+            }
+            if(marks=="")
+            {
+                alert("plz enter the marks")
+                document.getElementById("name").style.borderColor="red"
+                document.getElementById("name").focus()
+
+            }
+            if(pass=="")
+            {
+                alert("plz enter the password")
+                document.getElementById("name").style.borderColor="red"
+                document.getElementById("name").focus()
+
+            }
+            if(confirm=="")
+            {
+                alert("plz enter the confirm password")
+                document.getElementById("name").style.borderColor="red"
+                document.getElementById("name").focus()
+
+            }
+            if(confirm!=pass)
+            {
+                alert("plz enter the confirm password write")
+            }
+            else{
+                alert("Ragistration Form is Valid")
+            }
+        }
+        function reset()
+        {
+        var name=document.getElementById("name").value=""
+        var dob=document.getElementById("dob").value=""
+        var Mobile=document.getElementById("Mobile").value=""
+        var email=document.getElementById("email").value=""
+        var addr=document.getElementById("addr").value=""
+        var course=document.getElementById("course").value=""
+        var year=document.getElementById("year").value=""
+        var marks=document.getElementById("marks").value="="
+        var pass=document.getElementById("pass").value=""
+        var confirm=document.getElementById("confirm").value="" 
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <h1>Student Ragistration Form</h1>
+        <tr>
+            <td>Full Name </td>
+            <td><input type="text" name="" id="name"></td>
+        </tr>
+        <tr>
+            <td>DOB</td>
+            <td><input type="date" name="" id="dob"></td>
+        </tr>
+        <tr>
+            <td>Mobile Number</td>
+            <td><input type="number" name="" id="Mobile"></td>
+        </tr>
+        <tr>
+            <td>Email Id</td>
+            <td><input type="email" name="" id="email"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><textarea name="" id="addr" cols="20" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td>Course</td>
+            <td><input type="text" name="" id="course"></td>
+        </tr>
+        <tr>
+            <td>Appear Year</td>
+            <td><select name="" id="year">
+                <option value="">Select</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+            </select></td>
+        </tr>
+        <tr>
+        <td>Last Sem Marks in %</td>
+        <td><input type="number" name="" id="marks"></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="text" name="" id="pass"></td>
+    </tr>
+    <tr>
+        <td>Confirm Password</td>
+        <td><input type="text" name="" id="confirm"></td>
+    </tr>
+    <td></td>
+    <td><input type="button" value="Sumbit" onclick="student()"> <input type="button" value="Reset" onclick="reset()"></td>
+    </table>
+</body>
+
+</html>
